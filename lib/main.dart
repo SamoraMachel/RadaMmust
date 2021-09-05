@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rada/Information/information_screen.dart';
+import 'package:rada/Mentorship/mentorship_screen.dart';
 import 'package:rada/SignUp/signup_screen.dart';
 
 import './Dashboard/home_screen.dart';
@@ -26,7 +27,7 @@ class RadaApp extends StatelessWidget {
         '/forums': (context) => InformationSection(),
         '/notification': (context) => InformationSection(),
         '/help': (contet) => InformationSection(),
-        '/mentorship': (context) => InformationSection()
+        '/mentorship': (context) => MentorshipSection()
       },
     );
   }

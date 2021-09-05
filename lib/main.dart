@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rada/Information/information_screen.dart';
 import 'package:rada/SignUp/signup_screen.dart';
 
 import './Dashboard/home_screen.dart';
@@ -17,7 +18,16 @@ class RadaApp extends StatelessWidget {
         primaryColor: Color.fromRGBO(44, 82 , 226, 1),
         accentColor: Colors.white
       ),
-      home: SignUp(), 
+      routes: {
+        '/': (context) => SignUp(),
+        '/home': (context) => HomeScreen(),
+        '/information': (context) => InformationSection(),
+        '/counselling': (context) => InformationSection(),
+        '/forums': (context) => InformationSection(),
+        '/notification': (context) => InformationSection(),
+        '/help': (contet) => InformationSection(),
+        '/mentorship': (context) => InformationSection()
+      },
     );
   }
 }

@@ -10,7 +10,7 @@ class CardList extends StatelessWidget {
     return Column (
       children: [
         ...(cards as List<Map>).map((card) {
-          return DashboardCard(card['image'], card['title'], card['description']);
+          return DashboardCard(card['image'], card['title'], card['description'], card['route']);
         }).toList()
       ],
     );

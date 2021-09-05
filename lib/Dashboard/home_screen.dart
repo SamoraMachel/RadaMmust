@@ -16,32 +16,38 @@ class _HomeScreenState extends State<HomeScreen> {
     {
       'image': 'assets/images/information.jpeg',
       'title': 'Information',
-      'description': 'Knowledge si power'
+      'description': 'Knowledge si power',
+      'route': '/information'
     },
     {
       'image': 'assets/images/counceling.jpeg',
       'title': 'Student Councelling',
-      'description': 'Free Professional councelling'
+      'description': 'Free Professional councelling',
+      'route': '/counselling'
     },
     {
       'image': 'assets/images/forum.jpeg',
       'title': 'Student Forums',
-      'description': 'Share with the group'
+      'description': 'Share with the group',
+      'route': '/forums'
     },
     {
       'image': 'assets/images/notification.jpeg',
       'title': 'Quick Notifications',
-      'description': 'Instant Notifications'
+      'description': 'Instant Notifications',
+      'route': '/notification'
     },
     {
       'image': 'assets/images/help.jpeg',
       'title': 'Help',
-      'description': 'Location and Contacts'
+      'description': 'Location and Contacts',
+      'route': '/help'
     },
     {
       'image': 'assets/images/mentorship.jpeg',
       'title': 'Student Mentorship',
-      'description': 'Mentorship Programs'
+      'description': 'Mentorship Programs',
+      'route': '/mentorship'
     },
   ];
 

@@ -68,7 +68,9 @@ class SignUp extends StatelessWidget {
                                   fontSize: 20
                                 ),
                               ),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushNamed(context, '/home');
+                              },
                               style: ElevatedButton.styleFrom(
                                 primary: Theme.of(context).primaryColor,
                                 padding: EdgeInsets.only(top: 15, bottom: 15),

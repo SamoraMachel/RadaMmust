@@ -2,25 +2,22 @@ import 'package:flutter/material.dart';
 
 class BackPage extends StatelessWidget {
   final Widget content;
-  const BackPage({Key? key, required this.content}) : super(key: key);
+  final Widget? sideContent;
+  final double height;
+  const BackPage({Key? key, required this.content, this.sideContent, this.height = 100})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: this.height,
       margin: EdgeInsets.only(top: 60),
       child: Padding(
         padding: EdgeInsets.only(top: 20, left: 30, right: 10),
         child: Row(
           children: [
-            Expanded(child: content),
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.more_vert_outlined,
-                  color: Colors.white,
-                  size: 30,
-                ))
+            Expanded(child: content), 
+            if (sideContent != null ) sideContent!
           ],
         ),
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rada/Dashboard/cardList.dart';
 import 'package:rada/Utils/body.dart';
+import 'package:rada/Utils/menuIcon.dart';
 import 'package:rada/Utils/page.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -66,10 +67,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontSize: 37.0,
                       color: Colors.white),
                   textAlign: TextAlign.left,
-                )
+                ),
               ],
             ),
+            sideContent: MenuIcon(),
           ),
+          
           Body(
               content: Column(
             children: [CardList(cards: _dashboard_data)],

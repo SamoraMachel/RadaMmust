@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rada/SignUp/signup_screen.dart';
 
 import './Dashboard/home_screen.dart';
 
@@ -13,10 +14,10 @@ class RadaApp extends StatelessWidget {
       title: "Rada MMUST",
       debugShowCheckedModeBanner: false,  
       theme: ThemeData(
-        primaryColor: Color.fromRGBO(80, 61, 226, 1),
+        primaryColor: Color.fromRGBO(44, 82 , 226, 1),
         accentColor: Colors.white
       ),
-      home: HomeScreen(), 
+      home: SignUp(), 
     );
   }
 }
